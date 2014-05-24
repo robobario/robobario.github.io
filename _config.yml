@@ -1,0 +1,9 @@
+# Site settings
+title: robyoung
+email: robertyoungnz AT google DOT com
+baseurl: ""
+url: "http://www.robertyoungnz.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty

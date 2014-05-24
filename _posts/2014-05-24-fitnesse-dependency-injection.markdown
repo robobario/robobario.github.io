@@ -2,7 +2,7 @@
 layout: post
 title:  "Dependency Injection in Fitnesse"
 date:   2014-05-24 17:54:35
-categories: fitnesse spring testing
+categories: spring testing
 ---
 
 I work with a big suite of fitnesse tests. In this suite most of our tests retrieve services from a spring context. This is done in the most awkward way, with static fields that request beans like so: 

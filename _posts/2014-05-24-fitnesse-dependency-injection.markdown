@@ -13,7 +13,7 @@ private static TestService service = FitnesseContext.getBean(TestService.class);
 
 This is painful because you can be sure our massive spring context is going to be loaded whenever you instantiate a test fixture. These fixtures are unit tested and the current workaround is to use jmockit to stop the context load. We have sinned.
 
-Our goal is to make our fixtures simpler and testable with jmockit. We would prefer spring to inject services into the fixtures. My first attempt was just using the BeanFactory to autowire the fixtures. So in the constructor you would call a method like:
+Our goal is to make our fixtures simpler and testable without jmockit. We would prefer spring to inject services into the fixtures. My first attempt was just using the BeanFactory to autowire the fixtures. So in the constructor you would call a method like:
 
 {% highlight java %}
 FitnesseContext.inject(this);

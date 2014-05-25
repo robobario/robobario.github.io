@@ -48,15 +48,10 @@ public class InjectingInteraction extends DefaultInteraction{
     FitnesseContext.inject(o);
     return o;
   }
-
-  @Override
-  public Object methodInvoke(Method method, Object instance, Object... convertedArgs) {
-    return super.methodInvoke(method, instance, convertedArgs);
-  }
 }
 {% endhighlight %}
 
-Then you change the slim command to pass through the name of this class and it's all go.
+Then you change the slim command to pass through the name of this class and it's all go. The new class must be on the slim classpath.
 {% highlight bash %}
 java ... slimcommand stuff ... -i org.your.path.InjectingInteraction
 {% endhighlight %}

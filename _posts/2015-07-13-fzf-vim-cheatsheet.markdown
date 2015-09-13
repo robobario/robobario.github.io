@@ -8,10 +8,8 @@ categories: vim fzf
 
 I wanted a fast way to browse a vim cheat sheet from inside vim. I made a file and filled it with the cheats from [vim.rtorr.com](http://vim.rtorr.com). Then I mapped F1 (after disabling gnome terminal help) to `cat ~/vimcheat | fzf`.
 
-```VimL
-#.vimrc
-:map <F1> :! cat ~/vimcheat <bar> fzf <CR>
-```
+    #.vimrc
+    :map <F1> :! cat ~/vimcheat <bar> fzf <CR>
 
 ![fzf cheatsheet demo](/assets/fzfvim.gif)
 

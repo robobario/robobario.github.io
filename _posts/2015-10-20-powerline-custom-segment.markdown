@@ -11,3 +11,5 @@ To do this I copied [powerline-gitstatus]("https://github.com/jaspernbrouwer/pow
 Here's the high quality end result.
 
 ![Custom segment](/assets/custom-segment.png)
+
+And here's the repository:[powerline-random]("https://github.com/robobario/powerline-random")
